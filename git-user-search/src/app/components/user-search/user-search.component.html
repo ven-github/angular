@@ -1,0 +1,12 @@
+<div>
+  Git User Name: <br>
+  <input type="text" [(ngModel)]="userName">
+  <input type="button" value="Search" (click)=search()>
+
+  <div *ngIf="response">
+    <h3>User Info</h3>
+    <pre>{{response | json}}</pre>
+  </div>
+
+
+</div>
